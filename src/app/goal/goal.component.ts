@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Goal } from '../goal';
 
@@ -51,12 +50,6 @@ export class GoalComponent implements OnInit {
         this.goals.splice(index, 1);
       }
     }
-  }
-  addNewGoal(goal: Goal) {
-    let goalLength = this.goals.length;
-    goal.id = goalLength + 1;
-    goal.completeDate = new Date(goal.completeDate);
-    this.goals.push(goal);
   }
 
   constructor() {}
